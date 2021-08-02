@@ -11,6 +11,11 @@ x데이터 = []
 for i, rows in data.iterrows() :
     x데이터.append([ rows['gre'], rows['gre'], rows['gre'] ])
 
+
+
+
+    
+
 import numpy as np
 import tensorflow as tf
 
