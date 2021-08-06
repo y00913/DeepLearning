@@ -1,17 +1,20 @@
-# 경사 하강법
+# 비용 함수
+- 비용 함수(cost function) = 손실 함수(loss function) = 오차 함수(error function) = 목적 함수(objective function)
+- 평균 제곱 오차는 선형 회귀 문제에서 적절한 W와 b를 찾기위해서 최적화된 식임. 그 이유는 평균 제곱 오차의 값을 최소값으로 만드는 W와 b를 찾아내는 것이 가장 훈련 데이터를 잘 반영한 직선을 찾아내는 일이기 때문임.
+- 평균 제곱 오차를 W와 b에 의한 비용 함수(Cost function)로 재정의
+![](../img/03.readme.png)
 
+# 경사 하강법
 - 경사 하강법은 비용 함수를 미분하여 이 함수의 기울기(gradient)를 구해서 비용이 최소화 되는 방향을 찾아내는 알고리즘.
 - 비용 함수 = 손실 함수 = 오차 함수
 - 파이토치에서 자동 미분을 지원하여 경사 하강법을 쉽게 사용할 수 있음.
 
 # forword
-
 - H(x) 식에 입력 x로부터 예측된 y를 얻는 것을 forward 연산이라고 함.
 - 학습 전, prediction = model(x_train)은 x_train으로부터 예측값을 리턴하므로 forward 연산.
 - 학습 후, pred_y = model(new_var)는 임의의 값 new_var로부터 예측값을 리턴하므로 forward 연산.
 
 # backward
-
 - 학습 과정에서 비용 함수를 미분하여 기울기를 구하는 것을 backward 연산이라고 함.
 - cost.backward()는 비용 함수로부터 기울기를 구하라는 의미이며 backward 연산임.
 
