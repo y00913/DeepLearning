@@ -21,12 +21,12 @@ training_epochs = 15
 batch_size = 100
 
 # MNIST dataset
-mnist_train = dsets.MNIST(root='MNIST_data/',
+mnist_train = dsets.MNIST(root='./pytorch/MNIST_data/',
                           train=True,
                           transform=transforms.ToTensor(),
                           download=True)
 
-mnist_test = dsets.MNIST(root='MNIST_data/',
+mnist_test = dsets.MNIST(root='./pytorch/MNIST_data/',
                          train=False,
                          transform=transforms.ToTensor(),
                          download=True)

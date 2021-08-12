@@ -16,12 +16,12 @@ learning_rate = 0.001
 training_epochs = 15
 batch_size = 100
 
-mnist_train = dsets.MNIST(root='MNIST_data/', # 다운로드 경로 지정
+mnist_train = dsets.MNIST(root='./pytorch/MNIST_data/', # 다운로드 경로 지정
                           train=True, # True를 지정하면 훈련 데이터로 다운로드
                           transform=transforms.ToTensor(), # 텐서로 변환
                           download=True)
 
-mnist_test = dsets.MNIST(root='MNIST_data/', # 다운로드 경로 지정
+mnist_test = dsets.MNIST(root='./pytorch/MNIST_data/', # 다운로드 경로 지정
                          train=False, # False를 지정하면 테스트 데이터로 다운로드
                          transform=transforms.ToTensor(), # 텐서로 변환
                          download=True)
