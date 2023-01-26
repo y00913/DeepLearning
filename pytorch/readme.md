@@ -1,4 +1,4 @@
-# 파이토치 공식 문서
+# 파이토치 문서
 
 https://tutorials.pytorch.kr/beginner/blitz/tensor_tutorial.html
 
